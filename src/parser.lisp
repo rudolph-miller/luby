@@ -98,6 +98,10 @@
 
 (defrule here-doc "here-doc")
 
+|
+words
+need some functions to catch current character and detect close or not
+|
 (defrule words "words")
 
 (defrule regexp "regexp")
