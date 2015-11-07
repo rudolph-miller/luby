@@ -15,10 +15,11 @@
   :homepage "https://github.com/Rudolph-Miller/luby"
   :depends-on (:cl-syntax
                :cl-syntax-annot
-               )
+               :esrap)
   :components ((:module "src"
                 :components
-                ((:file "luby"))))
+                ((:file "parser")
+                 (:file "luby"))))
   :description "Luby"
   :long-description
   #.(with-open-file (stream (merge-pathnames
