@@ -16,7 +16,8 @@
                :prove)
   :components ((:module "t"
                 :components
-                ((:test-file "luby"))))
+                ((:test-file "parser")
+                 (:test-file "luby"))))
   :description "Test system for luby."
 
   :defsystem-depends-on (:prove-asdf)
