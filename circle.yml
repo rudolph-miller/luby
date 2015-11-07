@@ -31,7 +31,7 @@ dependencies:
 test:
   override:
     - ros run -- --version
-    - run-prove *test.asd
+    - run-prove luby-test.asd
 
 deployment:
   deployment:
