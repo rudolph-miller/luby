@@ -1,4 +1,4 @@
-# Luby
+# [WIP] Luby
 [![Build Status](https://circleci.com/gh/Rudolph-Miller/luby.svg?style=shield)](https://circleci.com/gh/Rudolph-Miller/luby)
 
 ## API
