@@ -82,6 +82,26 @@
 
 (defrule term "term")
 
+(defrule op-asgn "op-asgn")
+
+(defrule symbol "symbol")
+
+(defrule fname "fname")
+
+(defrule operation "operation")
+
+(defrule varname "varname")
+
+(defrule global "global")
+
+(defrule literal-string "literal-string")
+
+(defrule here-doc "here-doc")
+
+(defrule words "words")
+
+(defrule regexp "regexp")
+
 (defrule identifier (and (or alphabet underscare)
                          (* (or alphanumeric underscare)))
   (:lambda (list) (text list)))
