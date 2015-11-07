@@ -15,6 +15,7 @@
   :homepage "https://github.com/Rudolph-Miller/luby"
   :depends-on (:cl-syntax
                :cl-syntax-annot
+               :cl-ppcre
                :esrap)
   :components ((:module "src"
                 :components
