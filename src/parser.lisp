@@ -30,6 +30,10 @@
                        (* (or term expr))
                        (? term)))
 
+(defrule identifier (and (or alphabet underscare)
+                         (* (or alphanumeric underscare)))
+  (:lambda (list) (text list)))
+
 (defrule stmt "stmt")
 
 (defrule expr "expr")
@@ -98,14 +102,10 @@
 
 (defrule here-doc "here-doc")
 
-|
+#|
 words
 need some functions to catch current character and detect close or not
-|
+|#
 (defrule words "words")
 
 (defrule regexp "regexp")
-
-(defrule identifier (and (or alphabet underscare)
-                         (* (or alphanumeric underscare)))
-  (:lambda (list) (text list)))
