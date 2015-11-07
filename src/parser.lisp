@@ -24,6 +24,64 @@
 
 (defrule underscare #\_)
 
+(defrule program compstmt)
+
+(defrule compstmt (and stmt
+                       (* (or term expr))
+                       (? term)))
+
+(defrule stmt "stmt")
+
+(defrule expr "expr")
+
+(defrule call "call")
+
+(defrule command "command")
+
+(defrule function "function")
+
+(defrule arg "arg")
+
+(defrule primary "primary")
+
+(defrule when-args "when-args")
+
+(defrule then "then")
+
+(defrule do "do")
+
+(defrule block-var "block-var")
+
+(defrule mlhs "mlhs")
+
+(defrule mlhs-item "mlhs-item")
+
+(defrule lhs "lhs")
+
+(defrule mrhs "mrhs")
+
+(defrule call-args "call-args")
+
+(defrule args "args")
+
+(defrule argdecl "argdecl")
+
+(defrule arglist "arglist")
+
+(defrule singleton "singleton")
+
+(defrule assocs "assocs")
+
+(defrule assoc "assoc")
+
+(defrule variable "variable")
+
+(defrule literal "literal")
+
+(defrule string "string")
+
+(defrule term "term")
+
 (defrule identifier (and (or alphabet underscare)
                          (* (or alphanumeric underscare)))
   (:lambda (list) (text list)))
