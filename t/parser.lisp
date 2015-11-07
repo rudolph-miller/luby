@@ -36,7 +36,7 @@
 
   (subtest "fail"
     (macrolet ((identifier-fail-test (target comment)
-                 `(is-error (parser 'identifier ,target)
+                 `(is-error (parse 'identifier ,target)
                             'error
                             ,comment)))
       (identifier-fail-test
