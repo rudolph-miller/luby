@@ -21,7 +21,7 @@
                 :components
                 ((:file "parser")
                  (:file "luby"))))
-  :description "Luby"
+  :description "[WIP] Luby"
   :long-description
   #.(with-open-file (stream (merge-pathnames
                              #p"README.md"
